@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body{
+    background: black;
+}
+
+.carousel{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel .carousels{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel .carousels .carousel-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background: red;
+    box-shadow: 0 0 30px rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    opacity: 0;
+    transition: .4s;
+}
+
+.carousel .carousels .carousel-inner.active{
+    opacity: 1;
+}
+
+.carousel .carousels .carousel-inner:nth-child(even){
+    background: white;
+}
+
+.carousel .carousels .carousel-inner:nth-child(odd){
+    color: white;
+}
+
+.carousel .controls{ 
+    color: white;
+}
+
+.carousel .controls .prev,.carousel .controls .next{
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 8px 15px;
+    font-size: 25px;
+    border-radius: 8px;
+    background: dodgerblue;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .controls .prev{
+    left: 0;
+}
+
+.carousel .controls .next{
+    right: 0;
+}
+
+.carousel .indicators{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.carousel .indicators div{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: gray;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.carousel .indicators div.active{
+    background: white;
+    width: 19px;
+    height: 19px;
+}
