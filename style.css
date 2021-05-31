@@ -101,6 +101,6 @@ body{
 
 .carousel .indicators div.active{
     background: white;
-    width: 19px;
-    height: 19px;
+    width: 15px;
+    height: 15px;
 }
