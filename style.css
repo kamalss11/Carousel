@@ -90,8 +90,8 @@ body{
 }
 
 .carousel .indicators div{
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: gray;
     margin: 0 3px;
