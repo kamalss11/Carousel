@@ -40,6 +40,7 @@ function changeSlide(){
     }
 
     sliders[index].classList.add("active")
+    updateIndicator()
 }
 
 next.addEventListener("click",function(){
