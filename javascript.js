@@ -41,6 +41,7 @@ function changeSlide(){
 
     sliders[index].classList.add("active")
     updateIndicator()
+    resetTimer()
 }
 
 next.addEventListener("click",function(){
